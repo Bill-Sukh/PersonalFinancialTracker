@@ -1,0 +1,49 @@
+{
+  "FamilyMember": [
+    {
+      "Name": "Bilguut",
+      "Expenses": [
+        {
+          "ExpenseName": "Home mortage monthly",
+          "Amount": 1000,
+          "PromisedDue": 9,
+          "ActualDue": 1
+        },
+        {
+          "ExpenseName": "Progressive",
+          "Amount": 250,
+          "PromisedDue": 9,
+          "ActualDue": 10
+        },
+        {
+          "ExpenseName": "Photoshop",
+          "Amount": 16.06,
+          "PromisedDue": 7,
+          "ActualDue": 7
+        },
+        {
+          "ExpenseName": "Sunbit",
+          "Amount": "482.37",
+          "PromisedDue": 9,
+          "ActualDue": 13
+        },
+      ],
+      "PaydayInterval": 14,
+      "LastPayday": 0
+    },
+    {
+      "Name": "Sukhtsooj",
+      "Expenses": [
+        {
+          "ExpenseName": "Home mortage monthly",
+          "Amount": "1000.00",
+          "PromisedDue": 9,
+          "ActualDue": 1
+        }
+      ],
+      "PaydayInterval": 14,
+      "LastPayday": 0
+    }
+  ]
+
+}
