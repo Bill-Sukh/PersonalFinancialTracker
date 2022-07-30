@@ -1,49 +1,105 @@
 {
-  "FamilyMember": [
+  "Expenses": [
     {
-      "Name": "Bilguut",
-      "Expenses": [
-        {
-          "ExpenseName": "Home mortage monthly",
-          "Amount": 1000,
-          "PromisedDue": 9,
-          "ActualDue": 1
-        },
-        {
-          "ExpenseName": "Progressive",
-          "Amount": 250,
-          "PromisedDue": 9,
-          "ActualDue": 10
-        },
-        {
-          "ExpenseName": "Photoshop",
-          "Amount": 16.06,
-          "PromisedDue": 7,
-          "ActualDue": 7
-        },
-        {
-          "ExpenseName": "Sunbit",
-          "Amount": "482.37",
-          "PromisedDue": 9,
-          "ActualDue": 13
-        },
-      ],
-      "PaydayInterval": 14,
-      "LastPayday": 0
+      "ExpenseUID": 1,
+      "PaymentReceiver": "US bank",
+      "ExpenseCategory": "Mortgage",
+      "ExpenseName": "Bairnii mungu",
+      "Amount": 1000,
+      "PromisedDue": 9,
+      "ActualDue": 1
     },
     {
-      "Name": "Sukhtsooj",
-      "Expenses": [
-        {
-          "ExpenseName": "Home mortage monthly",
-          "Amount": "1000.00",
-          "PromisedDue": 9,
-          "ActualDue": 1
-        }
-      ],
-      "PaydayInterval": 14,
-      "LastPayday": 0
-    }
-  ]
+      "ExpenseUID": 2,
+      "PaymentReceiver": "Progressive",
+      "ExpenseCategory": "Car insurance",
+      "ExpenseName":  "Mashinii Daatgal",
+      "Amount": 250,
+      "PromisedDue": 9,
+      "ActualDue": 10
+    },
+    {
+      "ExpenseUID": 3,
+      "PaymentReceiver": "Progressive",
+      "ExpenseCategory": "Office tool",
+      "ExpenseName": "Photoshop",
+      "Amount": 16.06,
+      "PromisedDue": 7,
+      "ActualDue": 7
+    },
+    {
+      "ExpenseUID": 4,
+      "PaymentReceiver": "Sunbit",
+      "ExpenseCategory": "Car maintenance",
+      "ExpenseName": "Mashin zaswar",
+      "Amount": "482.37",
+      "PromisedDue": 9,
+      "ActualDue": 13
+    },
+    {
+      "ExpenseUID": 5,
+      "PaymentReceiver": "Spire Credit Union",
+      "ExpenseCategory": "Car loan",
+      "ExpenseName": "Mashinii tulbur",
+      "Amount": 300,
+      "PromisedDue": 19,
+      "ActualDue": 20
+    },
+    {
+      "ExpenseUID": 6,
+      "PaymentReceiver": "Bank of America",
+      "ExpenseCategory": "Credit Card",
+      "ExpenseName": "Credit card sar buriin",
+      "Amount": 1000,
+      "PromisedDue": 16,
+      "ActualDue": 18
+    },
+    {
+      "ExpenseUID": 7,
+      "PaymentReceiver": "Heritage Walk",
+      "ExpenseCategory": "Fee",
+      "ExpenseName": "Sooh",
+      "Amount": 300,
+      "PromisedDue": 18,
+      "ActualDue": 24
+    },
+    {
+      "ExpenseUID": 8,
+      "PaymentReceiver": "Xcel Energy",
+      "ExpenseCategory": "Home utility",
+      "ExpenseName": "Tognii mungu",
+      "Amount": 300,
+      "PromisedDue": 18,
+      "ActualDue": 20
+    },
+    {
+      "ExpenseUID": 8,
+      "PaymentReceiver": "Feldmann Mercedes",
+      "ExpenseCategory": "Car loan",
+      "ExpenseName": "Mashinii mungu",
+      "Amount": 712.74,
+      "PromisedDue": 9,
+      "ActualDue": 25
+    },
+    {
+      "ExpenseUID": 8,
+      "PaymentReceiver": "T-mobile",
+      "ExpenseCategory": "Mobile payment",
+      "ExpenseName": "Utasnii tulbur",
+      "Amount": 210.50,
+      "PromisedDue": 18,
+      "ActualDue": 24
+    },    
+    {
+      "ExpenseUID": 8,
+      "PaymentReceiver": "Xcel Energy",
+      "ExpenseCategory": "Home utility",
+      "ExpenseName": "Tognii mungu",
+      "Amount": 300,
+      "PromisedDue": 18,
+      "ActualDue": 24
+    },
 
+
+  ]
 }

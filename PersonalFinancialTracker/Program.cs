@@ -4,8 +4,8 @@
     {
         static void Main()
         {
-            string FirstPaycheck = "First paycheck".PadRight(5);
-
+            ExpenseTable table = new ExpenseTable();
+            table.ParseEntryData("FamilyMembers.json");
         }
     }
 }

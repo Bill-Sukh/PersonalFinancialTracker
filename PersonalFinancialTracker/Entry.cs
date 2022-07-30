@@ -7,18 +7,11 @@ using System.Threading.Tasks;
 
 namespace PersonalFinancialTracker
 {
-    [DataContract(Name = "FamilyMember")]
-    internal class FamilyMember
+    [DataContract(Name = "Entry")]
+    internal class Entry
     {
         [DataMember]
-        private string Name { get; set; }
-        [DataMember]
-        private Expense[] Expenses { get; set; }
-        [DataMember]
-        private byte PaydayInterval { get; set; }
-        [DataMember]
-        private byte LastPayday { get; set; }
-
+        private FamilyMember[] FamilyMember { get; set; }
         //public FamilyMember(string Name, Expense[] Expenses, byte PaydayInterval, byte LastPayday)
         //{
         //    this.Name = Name;

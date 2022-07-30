@@ -1,0 +1,67 @@
+{
+  "FamilyMember": [
+    {
+      "Name": "Bilguut",
+      "Expenses": [
+        {
+          "ExpenseName": "Home mortage monthly",
+          "Amount": 1000,
+          "PromisedDue": 9,
+          "ActualDue": 1
+        },
+        {
+          "ExpenseName": "Progressive",
+          "Amount": 250,
+          "PromisedDue": 9,
+          "ActualDue": 10
+        },
+        {
+          "ExpenseName": "Photoshop",
+          "Amount": 16.06,
+          "PromisedDue": 7,
+          "ActualDue": 7
+        },
+        {
+          "ExpenseName": "Sunbit",
+          "Amount": "482.37",
+          "PromisedDue": 9,
+          "ActualDue": 13
+        },
+        {
+          "ExpenseName": "Spire Credit Union",
+          "Amount": 300,
+          "PromisedDue": 19,
+          "ActualDue": 20
+        },
+        {
+          "ExpenseName": "Credit card",
+          "Amount": 1000,
+          "PromisedDue": 16,
+          "ActualDue": 18
+        },    
+        {
+          "ExpenseName": "Heritage Walk - Association fee",
+          "Amount": 300,
+          "PromisedDue": 18,
+          "ActualDue": 24
+        },
+      ],
+      "PaydayInterval": 14,
+      "LastPayday": 0
+    },
+    {
+      "Name": "Sukhtsooj",
+      "Expenses": [
+        {
+          "ExpenseName": "Home mortage monthly",
+          "Amount": "1000.00",
+          "PromisedDue": 9,
+          "ActualDue": 1
+        }
+      ],
+      "PaydayInterval": 14,
+      "LastPayday": 0
+    }
+  ]
+
+}
