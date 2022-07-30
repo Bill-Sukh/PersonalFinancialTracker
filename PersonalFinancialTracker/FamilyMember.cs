@@ -13,7 +13,7 @@ namespace PersonalFinancialTracker
         [DataMember]
         private string Name { get; set; }
         [DataMember]
-        private Expense[] Expenses { get; set; }
+        private int[] Expenses { get; set; }
         [DataMember]
         private byte PaydayInterval { get; set; }
         [DataMember]

@@ -5,7 +5,7 @@
       "PaymentReceiver": "US bank",
       "ExpenseCategory": "Mortgage",
       "ExpenseName": "Bairnii mungu",
-      "Amount": 1000,
+      "Amount": 0,
       "PromisedDue": 9,
       "ActualDue": 1
     },
@@ -20,7 +20,7 @@
     },
     {
       "ExpenseUID": 3,
-      "PaymentReceiver": "Progressive",
+      "PaymentReceiver": "Adobe",
       "ExpenseCategory": "Office tool",
       "ExpenseName": "Photoshop",
       "Amount": 16.06,
@@ -73,7 +73,7 @@
       "ActualDue": 20
     },
     {
-      "ExpenseUID": 8,
+      "ExpenseUID": 9,
       "PaymentReceiver": "Feldmann Mercedes",
       "ExpenseCategory": "Car loan",
       "ExpenseName": "Mashinii mungu",
@@ -82,24 +82,40 @@
       "ActualDue": 25
     },
     {
-      "ExpenseUID": 8,
+      "ExpenseUID": 10,
       "PaymentReceiver": "T-mobile",
       "ExpenseCategory": "Mobile payment",
       "ExpenseName": "Utasnii tulbur",
       "Amount": 210.50,
       "PromisedDue": 18,
       "ActualDue": 24
-    },    
-    {
-      "ExpenseUID": 8,
-      "PaymentReceiver": "Xcel Energy",
-      "ExpenseCategory": "Home utility",
-      "ExpenseName": "Tognii mungu",
-      "Amount": 300,
-      "PromisedDue": 18,
-      "ActualDue": 24
     },
-
-
+    {
+      "ExpenseUID": 11,
+      "PaymentReceiver": "Bank of America",
+      "ExpenseCategory": "Credit card",
+      "ExpenseName": "Aawiin credit card",
+      "Amount": 600,
+      "PromisedDue": 20,
+      "ActualDue": 25
+    },
+    {
+      "ExpenseUID": 12,
+      "PaymentReceiver": "US bank",
+      "ExpenseCategory": "Mortgage",
+      "ExpenseName": "Minnesota Housing",
+      "Amount": 300,
+      "PromisedDue": 9,
+      "ActualDue": 1
+    },
+    {
+      "ExpenseUID": 13,
+      "PaymentReceiver": "Spectrum",
+      "ExpenseCategory": "Home utility",
+      "ExpenseName": "Internet payment",
+      "Amount": 69.99,
+      "PromisedDue": 18,
+      "ActualDue": 21
+    }
   ]
 }

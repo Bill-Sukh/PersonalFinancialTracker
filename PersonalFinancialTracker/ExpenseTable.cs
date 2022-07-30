@@ -10,11 +10,19 @@ namespace PersonalFinancialTracker
     internal class ExpenseTable
     {
         private readonly string TableHeaderLeft = "";
+        private readonly string fileName = "FamilyMembers.json";
+        Entry entryData;
 
-        public void FetchTableData()
+        public ExpenseTable()
         {
-
+            entryData = ParseEntryData(fileName);
         }
+
+        //public FamilyMember GetFamilyMemberData(string name)
+        //{   
+
+        //    return 
+        //}
 
         public int TotalAmount()
         {
@@ -23,11 +31,8 @@ namespace PersonalFinancialTracker
 
         public Entry ParseEntryData(string fileName)
         {
-            Entry entryData;
             var data = File.ReadAllText($"../../../shared/{fileName}");
-
             entryData = Deserialize<Entry>(data);
-
             Console.WriteLine(data);
             return entryData;
         }
