@@ -11,7 +11,9 @@ namespace PersonalFinancialTracker
     internal class Entry
     {
         [DataMember]
-        private FamilyMember[] FamilyMember { get; set; }
+        public FamilyMember[] FamilyMembers { get; set; }
+        [DataMember]
+        public Expense[] Expenses { get; set; }
         //public FamilyMember(string Name, Expense[] Expenses, byte PaydayInterval, byte LastPayday)
         //{
         //    this.Name = Name;

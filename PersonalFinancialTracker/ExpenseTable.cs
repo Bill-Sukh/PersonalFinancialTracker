@@ -9,31 +9,71 @@ namespace PersonalFinancialTracker
 {
     internal class ExpenseTable
     {
-        private readonly string TableHeaderLeft = "";
-        private readonly string fileName = "FamilyMembers.json";
+        private readonly string fileName = "EntryData.json";
         Entry entryData;
 
         public ExpenseTable()
         {
-            entryData = ParseEntryData(fileName);
+            entryData = DeserializeJson(fileName);
         }
 
-        //public FamilyMember GetFamilyMemberData(string name)
-        //{   
-
-        //    return 
-        //}
-
-        public int TotalAmount()
+        public FamilyMember GetFamilyMemberData(string name)
         {
-            return 0;
+            foreach(FamilyMember member in entryData.FamilyMembers)
+            {
+                if(member.Name == name)
+                {
+                    return member;
+                }
+            }
+
+            return null;
         }
 
-        public Entry ParseEntryData(string fileName)
+        public (decimal, byte) GetTotalAmountOfExpenses(FamilyMember member)
+        {
+            decimal totalAmount = 0;
+            byte totalNumberOfExpenses = 0;
+            
+            foreach(byte expenseUID in member.ExpenseUIDs)
+            {
+                foreach(Expense expense in entryData.Expenses)
+                {
+                    if(expenseUID == expense.ExpenseUID)
+                    { 
+                        if(Contains(expenseUID, member.SplitPayments).Item1)
+                        {
+                            totalAmount += Contains(expenseUID, member.SplitPayments).Item2;
+                            break;
+                        }
+                        else
+                        {
+                            totalAmount += expense.Amount;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return (totalAmount, totalNumberOfExpenses);
+        }
+
+        public (bool, decimal) Contains(byte ExpenseUID, SplitPayment[] arr)
+        {
+            foreach(SplitPayment sp in arr)
+            {
+                if(sp.ExpenseUID == ExpenseUID)
+                {
+                    return (true, sp.SplitPaymentAmount);
+                }
+            }
+            return (false, 0);
+        }
+
+        public Entry DeserializeJson(string fileName)
         {
             var data = File.ReadAllText($"../../../shared/{fileName}");
             entryData = Deserialize<Entry>(data);
-            Console.WriteLine(data);
             return entryData;
         }
 
@@ -46,5 +86,6 @@ namespace PersonalFinancialTracker
                 return obj;
             }
         }
+
     }
 }

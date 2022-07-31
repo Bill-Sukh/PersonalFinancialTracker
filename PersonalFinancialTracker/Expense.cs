@@ -10,22 +10,27 @@ namespace PersonalFinancialTracker
     [DataContract(Name = "Expense")]
     internal class Expense
     {
-        [DataMember]
-        private string ExpenseName { get; set; }
-        [DataMember]
-        private string PromisedDue { get; set; }
-        [DataMember]
-        private string ActualDue { get; set; }
-        [DataMember]
-        private string Amount { get; set; }
 
-        //public Expense(string ExpenseName,  string PromisedDue, string ActualDue, string Amount)
-        //{
-        //    this.ExpenseName = ExpenseName;
-        //    this.PromisedDue = PromisedDue;
-        //    this.ActualDue = ActualDue;
-        //    this.Amount = Amount;
-        //}
-        
+        [DataMember]
+        public byte ExpenseUID { get; set; }
+
+        [DataMember]
+        public string PaymentReceiver { get; set; }
+
+        [DataMember]
+        public string ExpenseCategory { get; set; }
+
+        [DataMember]
+        public string ExpenseName { get; set; }
+
+        [DataMember]
+        public byte PromisedDue { get; set; }
+
+        [DataMember]
+        public byte ActualDue { get; set; }
+
+        [DataMember]
+        public decimal Amount { get; set; }
+
     }
 }

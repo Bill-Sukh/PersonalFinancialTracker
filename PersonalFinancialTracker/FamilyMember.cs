@@ -11,20 +11,19 @@ namespace PersonalFinancialTracker
     internal class FamilyMember
     {
         [DataMember]
-        private string Name { get; set; }
-        [DataMember]
-        private int[] Expenses { get; set; }
-        [DataMember]
-        private byte PaydayInterval { get; set; }
-        [DataMember]
-        private byte LastPayday { get; set; }
+        public string? Name { get; set; }
 
-        //public FamilyMember(string Name, Expense[] Expenses, byte PaydayInterval, byte LastPayday)
-        //{
-        //    this.Name = Name;
-        //    this.Expenses = Expenses;
-        //    this.PaydayInterval = PaydayInterval;
-        //    this.LastPayday = LastPayday;
-        //}
+        [DataMember]
+        public int[]? ExpenseUIDs { get; set; }
+
+        [DataMember]
+        public byte PaydayInterval { get; set; }
+
+        [DataMember]
+        public byte LastPayday { get; set; }
+
+        [DataMember]
+        public SplitPayment[] SplitPayments { get; set; }
+
     }
 }
