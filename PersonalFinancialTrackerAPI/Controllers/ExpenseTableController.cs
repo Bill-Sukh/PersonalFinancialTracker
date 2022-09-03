@@ -10,6 +10,7 @@ namespace PersonalFinancialTrackerAPI.Controllers
     {
          
         private readonly ILogger<ExpenseTableController> _logger;
+        private readonly string path = @"C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTracker\shared\Database.json";
 
         public ExpenseTableController(ILogger<ExpenseTableController> logger)
         {
@@ -19,45 +20,54 @@ namespace PersonalFinancialTrackerAPI.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            string fileName = "Database.json";
-            using(StreamReader r = new StreamReader(@"C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTracker\shared\Database.json"))
+            ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(GetJson(path));
+            if (data != null)
             {
-                string json = r.ReadToEnd();
-                ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(json);
                 return Ok(data);
             }
-
-            return null;
+            else
+            {
+                return null;
+            }
         }
 
         [HttpGet("Expense")]
         public IActionResult GetExpense(int ExpenseUID)
         {
-            string fileName = "Database.json";
-            using (StreamReader r = new StreamReader(@"C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTracker\shared\Database.json"))
+            ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(GetJson(path));
+            if (data != null)
             {
-                string json = r.ReadToEnd();
-                ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(json);  
                 var result = data.Expenses.Where(expense => expense.ExpenseUID == ExpenseUID);
                 return Ok(result);
             }
-            return null;
+            else
+            {
+                return null;
+            }
         }
 
         [HttpGet("Member")]
         public IActionResult GetMember(int MemberId)
         {
-            string fileName = "Database.json";
-            using (StreamReader r = new StreamReader(@"C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTracker\shared\Database.json"))
+            ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(GetJson(path));
+            if (data != null)
             {
-                string json = r.ReadToEnd();
-                ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(json);
                 var result = data.FamilyMembers.Where(member => member.MemberId == MemberId);
                 return Ok(result);
             }
-
-            return null;
+            else
+            {
+                return null;
+            }
         }
 
+        private string GetJson(string path)
+        {
+            using (StreamReader r = new StreamReader(path))
+            {
+                string json = r.ReadToEnd();
+                return json;
+            }
+        }
     }
 }
