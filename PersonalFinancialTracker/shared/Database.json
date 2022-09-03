@@ -1,6 +1,7 @@
 {
   "FamilyMembers": [
     {
+      "MemberId": 1,
       "Name": "Bilguut",
       "ExpenseUIDs": [ 1, 2, 3, 4, 5, 6, 7 ],
       "PaydayInterval": 14,
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "MemberId": 2,
       "Name": "Sukhtsooj",
       "ExpenseUIDs": [ 1, 2, 7, 8, 9, 10, 11 ],
       "PaydayInterval": 14,
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "MemberId": 3,
       "Name": "Enkhtuya",
       "ExpenseUIDs": [ 12, 13 ],
       "PaydayInterval": 7,

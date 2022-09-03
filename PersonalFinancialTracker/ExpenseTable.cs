@@ -9,7 +9,7 @@ namespace PersonalFinancialTracker
 {
     internal class ExpenseTable
     {
-        private readonly string fileName = "EntryData.json";
+        private readonly string fileName = "Database.json";
         Entry entryData;
 
         public ExpenseTable()

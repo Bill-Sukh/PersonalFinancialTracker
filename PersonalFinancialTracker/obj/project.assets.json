@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eclai\\Desktop\\Bilguut\\Bill\\Programming\\webDevelopment\\back-end\\C#\\PersonalFinancialTracker\\PersonalFinancialTracker\\PersonalFinancialTracker.csproj",
-      "projectName": "PersonalFinancialTracker",
-      "projectPath": "C:\\Users\\eclai\\Desktop\\Bilguut\\Bill\\Programming\\webDevelopment\\back-end\\C#\\PersonalFinancialTracker\\PersonalFinancialTracker\\PersonalFinancialTracker.csproj",
+      "projectUniqueName": "C:\\Users\\eclai\\Desktop\\Bilguut\\Bill\\Programming\\webDevelopment\\back-end\\C#\\PersonalFinancialTracker\\PersonalFinancialTracker\\PersonalFinancialTracker.BLL.csproj",
+      "projectName": "PersonalFinancialTracker.BLL",
+      "projectPath": "C:\\Users\\eclai\\Desktop\\Bilguut\\Bill\\Programming\\webDevelopment\\back-end\\C#\\PersonalFinancialTracker\\PersonalFinancialTracker\\PersonalFinancialTracker.BLL.csproj",
       "packagesPath": "C:\\Users\\eclai\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\eclai\\Desktop\\Bilguut\\Bill\\Programming\\webDevelopment\\back-end\\C#\\PersonalFinancialTracker\\PersonalFinancialTracker\\obj\\",
       "projectStyle": "PackageReference",
