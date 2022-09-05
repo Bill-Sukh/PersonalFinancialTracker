@@ -5,7 +5,7 @@
       "Name": "Bilguut",
       "ExpenseUIDs": [ 1, 2, 3, 4, 5, 6, 7 ],
       "PaydayInterval": 14,
-      "LastPayday": 28,
+      "LastPayday": "2022-08-25T18:25:43.511Z",
       "SplitPayments": [
         {
           "ExpenseUID": 1,
@@ -26,7 +26,7 @@
       "Name": "Sukhtsooj",
       "ExpenseUIDs": [ 1, 2, 7, 8, 9, 10, 11 ],
       "PaydayInterval": 14,
-      "LastPayday": 0,
+      "LastPayday": "2022-08-25T18:25:43.511Z",
       "SplitPayments": [
         {
           "ExpenseUID": 1,
@@ -47,7 +47,7 @@
       "Name": "Enkhtuya",
       "ExpenseUIDs": [ 12, 13 ],
       "PaydayInterval": 7,
-      "LastPayday": 0,
+      "LastPayday": "2022-08-25T18:25:43.511Z",
       "SplitPayments": [
         {
           "ExpenseUID": 1,

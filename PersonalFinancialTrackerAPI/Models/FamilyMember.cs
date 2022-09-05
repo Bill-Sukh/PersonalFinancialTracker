@@ -24,7 +24,7 @@ namespace PersonalFinancialTrackerAPI
         public byte PaydayInterval { get; set; }
 
         [JsonProperty("LastPayday")]
-        public byte LastPayday { get; set; }
+        public DateTime LastPayday { get; set; }
 
         [JsonProperty("SplitPayments")]
         public SplitPayment[] SplitPayments { get; set; }
