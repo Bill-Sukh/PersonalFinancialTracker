@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vsC5jvHP4kWHbBEVuiWWrLqsvt5WZ31nvjO/Voc+Gv4=",
+  "Source": "PersonalFinancialTrackerAPI",
+  "BasePath": "_content/PersonalFinancialTrackerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

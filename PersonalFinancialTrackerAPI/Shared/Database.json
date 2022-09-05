@@ -1,0 +1,178 @@
+{
+  "FamilyMembers": [
+    {
+      "MemberId": 1,
+      "Name": "Bilguut",
+      "ExpenseUIDs": [ 1, 2, 3, 4, 5, 6, 7 ],
+      "PaydayInterval": 14,
+      "LastPayday": "2022-08-25T18:25:43.511Z",
+      "SplitPayments": [
+        {
+          "ExpenseUID": 1,
+          "SplitPaymentAmount": 1000
+        },
+        {
+          "ExpenseUID": 2,
+          "SplitPaymentAmount": 250
+        },
+        {
+          "ExpenseUID": 7,
+          "SplitPaymentAmount": 100
+        }
+      ]
+    },
+    {
+      "MemberId": 2,
+      "Name": "Sukhtsooj",
+      "ExpenseUIDs": [ 1, 2, 7, 8, 9, 10, 11 ],
+      "PaydayInterval": 14,
+      "LastPayday": "2022-08-25T18:25:43.511Z",
+      "SplitPayments": [
+        {
+          "ExpenseUID": 1,
+          "SplitPaymentAmount": 1000
+        },
+        {
+          "ExpenseUID": 2,
+          "SplitPaymentAmount": 250
+        },
+        {
+          "ExpenseUID": 7,
+          "SplitPaymentAmount": 100
+        }
+      ]
+    },
+    {
+      "MemberId": 3,
+      "Name": "Enkhtuya",
+      "ExpenseUIDs": [ 12, 13 ],
+      "PaydayInterval": 7,
+      "LastPayday": "2022-08-25T18:25:43.511Z",
+      "SplitPayments": [
+        {
+          "ExpenseUID": 1,
+          "SplitPaymentAmount": 300
+        }
+      ]
+    }
+  ],
+  "Expenses": [
+    {
+      "ExpenseUID": 1,
+      "PaymentReceiver": "US bank",
+      "ExpenseCategory": "Mortgage",
+      "ExpenseName": "Bairnii mungu",
+      "Amount": 0,
+      "PromisedDue": 9,
+      "ActualDue": 1
+    },
+    {
+      "ExpenseUID": 2,
+      "PaymentReceiver": "Progressive",
+      "ExpenseCategory": "Car insurance",
+      "ExpenseName": "Mashinii Daatgal",
+      "Amount": 250,
+      "PromisedDue": 9,
+      "ActualDue": 10
+    },
+    {
+      "ExpenseUID": 3,
+      "PaymentReceiver": "Adobe",
+      "ExpenseCategory": "Office tool",
+      "ExpenseName": "Photoshop",
+      "Amount": 16.06,
+      "PromisedDue": 7,
+      "ActualDue": 7
+    },
+    {
+      "ExpenseUID": 4,
+      "PaymentReceiver": "Sunbit",
+      "ExpenseCategory": "Car maintenance",
+      "ExpenseName": "Mashin zaswar",
+      "Amount": "428.37",
+      "PromisedDue": 9,
+      "ActualDue": 13
+    },
+    {
+      "ExpenseUID": 5,
+      "PaymentReceiver": "Spire Credit Union",
+      "ExpenseCategory": "Car loan",
+      "ExpenseName": "Mashinii tulbur",
+      "Amount": 300,
+      "PromisedDue": 19,
+      "ActualDue": 20
+    },
+    {
+      "ExpenseUID": 6,
+      "PaymentReceiver": "Bank of America",
+      "ExpenseCategory": "Credit Card",
+      "ExpenseName": "Credit card sar buriin",
+      "Amount": 1000,
+      "PromisedDue": 16,
+      "ActualDue": 18
+    },
+    {
+      "ExpenseUID": 7,
+      "PaymentReceiver": "Heritage Walk",
+      "ExpenseCategory": "Fee",
+      "ExpenseName": "Sooh",
+      "Amount": 300,
+      "PromisedDue": 18,
+      "ActualDue": 24
+    },
+    {
+      "ExpenseUID": 8,
+      "PaymentReceiver": "Xcel Energy",
+      "ExpenseCategory": "Home utility",
+      "ExpenseName": "Tognii mungu",
+      "Amount": 300,
+      "PromisedDue": 18,
+      "ActualDue": 20
+    },
+    {
+      "ExpenseUID": 9,
+      "PaymentReceiver": "Feldmann Mercedes",
+      "ExpenseCategory": "Car loan",
+      "ExpenseName": "Mashinii mungu",
+      "Amount": 712.74,
+      "PromisedDue": 9,
+      "ActualDue": 25
+    },
+    {
+      "ExpenseUID": 10,
+      "PaymentReceiver": "T-mobile",
+      "ExpenseCategory": "Mobile payment",
+      "ExpenseName": "Utasnii tulbur",
+      "Amount": 210.50,
+      "PromisedDue": 18,
+      "ActualDue": 24
+    },
+    {
+      "ExpenseUID": 11,
+      "PaymentReceiver": "Bank of America",
+      "ExpenseCategory": "Credit card",
+      "ExpenseName": "Aawiin credit card",
+      "Amount": 600,
+      "PromisedDue": 20,
+      "ActualDue": 25
+    },
+    {
+      "ExpenseUID": 12,
+      "PaymentReceiver": "US bank",
+      "ExpenseCategory": "Mortgage",
+      "ExpenseName": "Minnesota Housing",
+      "Amount": 300,
+      "PromisedDue": 9,
+      "ActualDue": 1
+    },
+    {
+      "ExpenseUID": 13,
+      "PaymentReceiver": "Spectrum",
+      "ExpenseCategory": "Home utility",
+      "ExpenseName": "Internet payment",
+      "Amount": 69.99,
+      "PromisedDue": 18,
+      "ActualDue": 21
+    }
+  ]
+}
