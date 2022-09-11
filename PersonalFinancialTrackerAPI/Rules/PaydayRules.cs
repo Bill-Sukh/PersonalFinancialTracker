@@ -15,14 +15,7 @@
         {
             if (paydayInterval == 14)
             {
-                if (payday.Day > 15)
-                {
-                    return 2;
-                }
-                else
-                {
-                    return 1;
-                }
+                return 2;
             }
 
             return 0;

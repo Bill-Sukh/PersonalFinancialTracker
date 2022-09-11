@@ -26,3 +26,8 @@ C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\Perso
 C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\obj\Debug\net6.0\PersonalFinancialTrackerAPI.genruntimeconfig.cache
 C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\obj\Debug\net6.0\ref\PersonalFinancialTrackerAPI.dll
 C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\eclai\Desktop\Bilguut\Bill\Programming\webDevelopment\back-end\C#\PersonalFinancialTracker\PersonalFinancialTrackerAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

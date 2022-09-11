@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using PersonalFinancialTrackerAPI.Models;
 using Newtonsoft.Json;
 using PersonalFinancialTrackerAPI.Rules;
+using System.Net;
+using Microsoft.AspNetCore.Cors;
 
 namespace PersonalFinancialTrackerAPI.Controllers
 {
@@ -19,12 +21,12 @@ namespace PersonalFinancialTrackerAPI.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public JsonResult Get()
         {
             ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(GetJson(path));
             if (data != null)
             {
-                return Ok(data);
+                return new JsonResult(data);
             }
             else
             {
@@ -33,19 +35,23 @@ namespace PersonalFinancialTrackerAPI.Controllers
         }
 
         [HttpGet("Expense")]
-        public IActionResult GetExpense(int ExpenseUID)
+        public JsonResult GetExpense(int ExpenseUID)
         {
             ExpenseTable data = JsonConvert.DeserializeObject<ExpenseTable>(GetJson(path));
             if (data != null)
             {
-                var result = data.Expenses.Where(expense => expense.ExpenseUID == ExpenseUID);
-                return Ok(result);
+                //var result = data.Expenses.Where(expense => expense.ExpenseUID == ExpenseUID);
+                var result = (from b in data.Expenses
+                              where b.ExpenseUID == ExpenseUID
+                              select b).FirstOrDefault();
+                return new JsonResult(result);
             }
             else
             {
                 return null;
             }
         }
+
 
         [HttpGet("MemberExpenses")]
         public IActionResult GetMemberExpenses(int MemberId)
@@ -72,6 +78,8 @@ namespace PersonalFinancialTrackerAPI.Controllers
 
                 result.PaydayDiv = PaydayRules.DividePayday(member.LastPayday, member.PaydayInterval);
                 result.Expenses = memberExpenses;
+                HttpContext.Response.Headers.Add("x-my-custom-header", "individual response");
+
                 return Ok(result);
             }
             else
